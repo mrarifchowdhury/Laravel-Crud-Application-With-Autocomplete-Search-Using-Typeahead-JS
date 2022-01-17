@@ -1,0 +1,547 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0px 15px 0 15px;
+}
+
+.flex-item {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+/* Header Start */
+
+header {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+
+header h3.header-title {
+    padding-bottom: 5%;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #F4C430;
+}
+
+header ul.header-menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+header .header-menu li a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right: 20px;
+}
+
+header ul.header-menu li:hover,
+header ul.header-menu li a:hover {
+    transform: scale(1.1);
+    transition: all ease .5s;
+    color: #F4C430;
+}
+
+/* Header End */
+
+
+
+
+/* Profile Start */
+
+.profile-info {
+    background: #008080;
+    padding: 15px 0 0 15px;
+    flex-basis: 50%;
+    max-width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-info .content {
+    margin-top: 5%;
+    margin-left: -5%;
+}
+
+.profile-info .content p.greeting {
+    padding-bottom: 2%;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #F4C430;
+}
+
+.profile-info .content h1.name {
+    padding-bottom: 2%;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color: #FFFF;
+}
+
+.profile-info .content p.role {
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.profile-image {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+
+.profile-image img {
+    max-width: 100%;
+    height: 100%;
+}
+
+/* Profile End */
+
+
+/* AboutMe Section Start */
+
+.Aboutme {
+    background: papayawhip;
+    padding: 6% 0;
+
+}
+
+.Aboutme .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.Aboutme h2 {
+    font-size: 55px;
+    color: #008080;
+    padding-bottom: 30px;
+}
+
+.Aboutme p {
+    text-align: justify;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+
+.Aboutme .btn {
+    color: #008080;
+    text-decoration: none;
+    padding: 10px 22px;
+    background-color: sandybrown;
+    font-weight: 900;
+}
+
+
+
+/* Showreel Section Start */
+
+.showreel {
+    padding: 4% 0;
+}
+
+
+.showreel h2 {
+    font-size: 55px;
+    color: #008080;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+
+.showreel .play-video {
+    position: relative;
+    width: 100%;
+}
+
+.showreel .play-video .image {
+    display: block;
+    width: 100%;
+}
+
+.showreel .play-video .image-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+    transition: .3s ease;
+}
+
+
+
+.showreel .play-video .icon-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: none;
+    transition: .3s ease;
+}
+
+.showreel .play-video .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+.showreel .play-video .icon .fa-play-circle-o {
+    font-size: 100px;
+    vertical-align: middle;
+
+}
+
+.icon-div:hover .icon-cover {
+    opacity: 0.5;
+    display: block;
+}
+
+
+.icon-div .fa-play-circle-o {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+
+.icon-div:hover .fa-play-circle-o {
+    color: palegoldenrod;
+}
+
+/* Showreel Section End */
+
+
+/* Photos Section Start */
+
+.photos {
+    padding: 0 0 4% 0;
+}
+
+
+.photos h2 {
+    font-size: 55px;
+    color: #008080;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.photos-gallery {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Photos Section End */
+
+
+
+/* Contact Us Start */
+
+.contact {
+    padding: 4% 0 6% 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    background-color: purple;
+}
+
+.contact-form .image {
+    flex-basis: 54%;
+    max-width: 54%;
+    opacity: 0.8;
+}
+
+.contact-form .contact-info {
+    background: #008080;
+    flex-basis: 46%;
+    max-width: 46%;
+    /* display: flex;
+    flex-direction: column;*/
+    padding: 5% 0% 6% 10%;
+}
+
+.contact-form .contact-info h2 {
+    font-size: 55px;
+    color: #F4C430;
+    padding-bottom: 4%;
+}
+
+
+.contact-form .contact-info p {
+    color: #fff;
+}
+
+.contact-form .contact-info p.title {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+
+
+.contact-form .contact-info .profile {
+    padding: 10px 0 10px 0;
+
+}
+
+.contact-form .contact-info p.role {
+    font-weight: bold;
+}
+
+.contact-form .contact-info .social-icon a {
+    color: #fff;
+    padding: 1% 0 0 0;
+}
+
+.contact-form .contact-info .social-icon a i {
+    padding-right: 2%;
+}
+
+/* Contact Us End */
+
+
+
+/*footer Start*/
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 4% 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: darkmagenta;
+}
+
+/*footer End*/
+
+
+
+
+
+
+
+
+/* Responsive  start */
+
+
+@media only screen and (max-width:992px) {
+
+
+
+    .profile-info .content {
+        margin-top: 10%;
+        margin-left: -10%;
+    }
+
+    .profile-info .content p.greeting {
+        padding-bottom: 0%;
+        font-size: 30px;
+    }
+
+    .profile-info .content h1.name {
+        padding-bottom: 2%;
+        font-size: 40px;
+    }
+
+    .profile-info .content p.role {
+        font-size: 13px;
+
+    }
+
+    header h3.profile-title {
+        font-size: 20px;
+    }
+
+    header .profile-menu li a {
+        font-size: 15px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+
+
+    .flex-item {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+
+    .profile-info {
+        padding: 100px 0 100px 15px;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    .profile-info .content p.greeting {
+        padding-bottom: 2%;
+        font-weight: 400;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: #F4C430;
+    }
+
+    .profile-info .content h1.name {
+        padding-bottom: 2%;
+        font-weight: 700;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        color: #FFFF;
+    }
+
+    .profile-info .content p.role {
+        color: #fff;
+        font-size: 15px;
+
+    }
+
+
+    .profile-image {
+        flex-basis: 100%;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .profile-info .content {
+        margin-top: 10%;
+        margin-left: -10%;
+    }
+
+    .profile-info .content p.greeting {
+        padding-bottom: 0%;
+        font-size: 30px;
+    }
+
+    .profile-info .content h1.name {
+        padding-bottom: 2%;
+        font-size: 40px;
+    }
+
+    .profile-info .content p.role {
+        font-size: 13px;
+
+    }
+
+    header h3.profile-title {
+        font-size: 20px;
+    }
+
+    header .profile-menu li a {
+        font-size: 15px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .contact-form .image{
+        flex-basis: 56%;
+        max-width: 56%;
+    }
+    .contact-form .contact-info{
+        flex-basis: 44%;
+        max-width: 44%;
+        padding: 5% 0% 4% 5%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 668px) {
+
+    .contact-form{
+        flex-direction: column;
+    }
+
+    .contact-form .image{
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .contact-form .contact-info{
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 8% 0% 6% 6%;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+
+/* Responsive End */
